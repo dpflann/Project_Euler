@@ -1,0 +1,188 @@
+console
+object pe2 {
+  def fibonacci(int:Int) = {
+    int match {
+      case 0 => 1
+      case 1 => 1
+      case _ => fibonacci(int-1) + fibonacci(int-2)
+    }
+  }
+  def solve = {
+    val x = 0
+    var sum = 0
+    while (fibonacci(x) < 4000000) {
+      fibonacci(x) % 2 match {
+        case 0 => sum += fibonacci(x)
+      }
+      x++
+    }
+    sum
+  }
+compile
+console
+compile
+console
+ls
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compil
+compile
+console
+exit
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+:q
+exit
+compile
+exit
+console
+:q
+console
+exit
+update
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+:q
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+exit
