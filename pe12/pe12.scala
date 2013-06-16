@@ -13,7 +13,42 @@ Let us list the factors of the first seven triangle numbers:
 21: 1,3,7,21
 28: 1,2,4,7,14,28
 We can see that 28 is the first triangle number to have over five divisors.
+d*c = a, 1 <= d <= a, 1 <= c <= a, d inversly proportional to c, only need to test values up to (a^(1/2)), find the first number
+with 250 divisors less than (a^(1/2))
 
 What is the value of the first triangle number to have over five hundred divisors?
-
 */
+
+object pe12 {
+
+
+  def determineDivisors(number:Int) = {
+    var divisors = 0
+    val sqrt = Math.floor(Math.sqrt(number.toDouble)).toInt
+    for (i <- 1 to sqrt)
+      if (number % i == 0)
+        divisors += 1
+
+    2*divisors
+  }
+
+  def evaluateTriangleNumbers(divisorCount:Int) = {
+    var diff = 2
+    var triangleNum = 1
+    while (determineDivisors(triangleNum) < divisorCount)
+    {
+      triangleNum += diff
+      diff += 1
+    }
+    triangleNum
+  }
+
+  def solve = {
+      println("The solution is " + evaluateTriangleNumbers(500))
+  }
+
+  def main(args: Array[String]) = {
+    solve
+  }
+
+}
