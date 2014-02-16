@@ -31,7 +31,7 @@ def collatz(n):
 
 
 def longest_collatz(n):
-  print("Finding the number less or equal to {0} with the longest collatz sequence.".format(n))
+  print("Finding the number less than or equal to {0} with the longest collatz sequence.".format(n))
   _max = (-1, -1)
   for i in range(0, n):
     c = collatz(i)
@@ -40,5 +40,8 @@ def longest_collatz(n):
 
   return _max
 
-print(longest_collatz(int(sys.argv[1])))
+if (len(sys.argv) > 1):
+  print(longest_collatz(int(sys.argv[1])))
+else:
+  print(longest_collatz(1000000))
 
