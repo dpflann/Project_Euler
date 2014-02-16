@@ -44,7 +44,9 @@ object pe12 {
   }
 
   def solve = {
-      println("The solution is " + evaluateTriangleNumbers(500))
+    val start = System.currentTimeMillis
+    println("The solution is " + evaluateTriangleNumbers(500))
+    println(System.currentTimeMillis - start + " ms")
   }
 
   def main(args: Array[String]) = {
