@@ -12,6 +12,7 @@ def sumDigitsInFactorial(n):
 def sDiF(n):
   return reduce(lambda x, y: int(x) + int(y), str(math.factorial(n)), 0 )
 
+# factor out all
 
 
 #####################
