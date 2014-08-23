@@ -31,9 +31,9 @@ def explore(limit, lower=10):
   ys = []
   for i in range(lower, limit):
     sFoD = sumFactorialOfDigits(i, factorialTable)
-    print "%d => %d" % (i, sFoD)
     xs.append(i)
     ys.append(sFoD)
+  scatterplot(xs, ys)
   return xs, ys
 
 def sumOfFactorialOfDigits(n):
