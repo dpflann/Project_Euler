@@ -48,4 +48,4 @@ def sumOfFactorialOfDigits(n):
 # intuitively limit seems to be 9! so use it as upper bound
 # TODO: explore this idea more mathematically
 def solve():
-  print "The sum of all number which are equal to the sum of the factorial of their digits is %d." % sumOfFactorialOfDigits(m.factorial(9))
+  print "The sum of all numbers which are equal to the sum of the factorial of their digits is %d." % sumOfFactorialOfDigits(m.factorial(9))
