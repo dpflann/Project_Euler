@@ -40,5 +40,9 @@ def findDigitPowers(power):
     length = length + 1
   return sum(numbers)
 
+def fDp(power):
+  return sum({ i for i in range(10, 9**(power + 1)) if reduce(lambda theSum, digit: theSum + ( int(digit) )**(power), list(str(i)), 0) == i })
+
 def solve():
   print "The sum of all the numbers that can be written as the sum of the fifth powers of their digits is %d." % findDigitPowers(5)
+  print "The sum of all the numbers that can be written as the sum of the fifth powers of their digits is %d." % fDp(5)
