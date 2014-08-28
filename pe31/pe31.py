@@ -18,16 +18,18 @@ class Memoize:
       self.memo[args] = self.f(*args)
     return self.memo[args]
 
-
-def findWaysForSum(coins, targetSum):
+def countWaysToSumHelper(coins, targetSum):
   if targetSum == 0:
     return 1
   if len(coins) == 0 or targetSum < 0:
     return 0
   else:
     currentMax = max(coins)
-    return findWaysForSum(coins, targetSum - currentMax) + findWaysForSum(coins - frozenset({ currentMax }), targetSum)
+    return countWaysToSumHelper(coins, targetSum - currentMax) + countWaysToSumHelper(coins - frozenset({ currentMax }), targetSum)
 
-def findDifferentWaysToSum(n):
+def countWaysToSum(n):
   coins = frozenset({ 1, 2, 5, 10, 20, 50, 100, 200 })
-  return Memoize(findWaysForSum)(coins, n)
+  return Memoize(countWaysToSumHelper)(coins, n)
+
+def solve():
+  print "The number of ways £2 be made using any number of coins from 1p, 2p, 5p, 10p, 20p, 50p, £1, £2 is %d." % countWaysToSum(200)
