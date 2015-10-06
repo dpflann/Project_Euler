@@ -4,7 +4,7 @@
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
 def sumOfMultiples():
-  return sum(set(filter(lambda n: n % 3 == 0 or n % 5 == 0, range(1, 1001))))
+  return sum(set(filter(lambda n: n % 3 == 0 or n % 5 == 0, range(1, 1000))))
 
 def solve():
   print "The sum of all the multiples of 3 or 5 below 1000 is %d." % sumOfMultiples()
