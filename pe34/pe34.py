@@ -49,3 +49,5 @@ def sumOfFactorialOfDigits(n):
 # TODO: explore this idea more mathematically
 def solve():
   print "The sum of all numbers which are equal to the sum of the factorial of their digits is %d." % sumOfFactorialOfDigits(m.factorial(9))
+
+solve()
