@@ -7,58 +7,43 @@
 #
 # For which value of p ≤ 1000, is the number of solutions maximised?
 
-def findFactorPairs(n):
-  pairs = set({})
-  if n % 2 == 0:
-    n = n / 2
-  for i in range(1, n):
-    if n % i == 0:
-      pairs.add(tuple(sorted( ( i, n / i ) )))
-  return pairs
+# a = sqrt(c**2 - b**2)
+# b = sqrt(c**2 - a**2)
+# c = sqrt(a**2 + b**2)
+# a = p - b - c
+# b = p - a - c
+# c = p - a - b
+# 
+# (p - a - b)**2  = a**2 + b**2
+# p**2 - pa - pb - pa + a**2 + ab - pb + ab + b**2 = a**2 + b**2
+# p**2 - 2pa - 2pb + 2ab + a**2 + b**2 = a**2 + b**2
+# p**2 - 2pa - 2pb + 2ab = 0
+# p**2 = 2pa + 2pb - 2ab
+# p**2 = 2pa - 2ab + 2pb
+# p**2 - 2pa = 2pb - 2ab
+# (p**2 - 2pa) = 2b(p - a)
+# (p**2 - 2pa)/(p - a)/2 = b
 
-def findSideLengths(pairs, b):
-  # b = 2mn
-  # a = m**2 - n**2
-  # c = m**2 + n**2
-  sideTuples = []
-  divisionFactor = 1
-  if b % 2 == 1:
-    divisionFactor = 2
-  for p in pairs:
-    n, m = p
-    a = (m**2 - n**2) / divisionFactor
-    c = (m**2 + n**2) / divisionFactor
-    if a > 0 and c > 0:
-      sideTuples.append((a, b, c))
-  return sideTuples
+def find_triangular_integral_sides(p):
+  integral_sides = set()
+  p_2 = p**2
+  for a in range(1, p):
+    b = (p_2 - 2*p*a) / (p - a) / 2
+    c = p - a - b
+    sides = map(int, [a, b, c])
+    if any(map(lambda s: s <= 0, sides)):
+      continue
+    if sides[0]**2 + sides[1]**2 == sides[2]**2:
+      integral_sides.add(tuple(sorted(sides)))
+  return integral_sides
 
-def calculatePerimeter(sideTuple):
-  return sum(sideTuple)
+def find_maximum_perimeter(limit):
+  perimeter_sides_dict = []
+  for p in range(1, limit + 1):
+    perimeter_sides_dict.append((p, len(find_triangular_integral_sides(p))))
+  return max(perimeter_sides_dict, key=lambda t: t[1])
 
-def findTriangles(limit):
-  perimeterToTriangles = {}
-  for b in range(1, limit):
-    # find triangles
-    pairs = findFactorPairs(b)
-    lengths = findSideLengths(pairs, b)
-    print "b: ", b, ", lengths: ", lengths
-    perimeters = map(sum, lengths)
-    print "perimeters: ", perimeters
-    perimeters = filter(lambda p: p <= 1000, perimeters)
-    print "perimeters: ", perimeters
-    for p in perimeters:
-      if p in perimeterToTriangles:
-        perimeterToTriangles[p] += 1
-      else:
-        perimeterToTriangles[p] = 1
-  maxGroupSize = 0
-  mostPopularPerimeter = 0
-  print perimeterToTriangles
-  for k in perimeterToTriangles:
-    if perimeterToTriangles[k] > maxGroupSize:
-      maxGroupSize = perimeterToTriangles[k]
-      mostPopularPerimeter = k
-  return mostPopularPerimeter
+def solve(limit=1000):
+  print "The p <= 1000 for which the number of integral-side, right-angle triangles is maximized is %d." % find_maximum_perimeter(limit)[0]
 
-def solve():
-  print "The p <= 1000 for which the number of integral-side, right-angle triangles is maximized is %d." % findTriangles(120)
+solve()
