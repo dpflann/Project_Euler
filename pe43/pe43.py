@@ -26,9 +26,6 @@ def find_substring_divisible_pandigitals():
 def solve():
   print("The sum of pandigital numbers with substring divisibility is: %d" % sum(map(int, find_substring_divisible_pandigitals())))
 
-def test():
-  assert(has_substring_divisibility(1406357289) == True)
-
 if __name__ == '__main__':
   solve()
 
