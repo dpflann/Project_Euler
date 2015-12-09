@@ -18,13 +18,15 @@ def find_prime_comprised_of_most_consecutive_primes(limit):
   length = 0
   primes = list(primes_sieve(limit))
   cumulative_sums = [0] + [sum(primes[:i]) for i in range(1, len(primes) + 1) if sum(primes[:i]) < primes[-1]]
+  _limit = primes[-1]
+  primes = set(primes)
   i = 0
   while i < len(cumulative_sums):
     j = i - (length + 1)
     while j >= 0:
       diff = cumulative_sums[i] - cumulative_sums[j]
       dist = i - j
-      if diff > primes[-1]:
+      if diff > _limit:
         break
       if diff in primes and dist > length:
         length = dist
