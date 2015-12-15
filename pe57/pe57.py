@@ -1,3 +1,5 @@
+import sys
+
 def find_top_heavy_expansions(number_of_expansions=1000):
   count = 0
   expansions = [(3,2)]
@@ -23,9 +25,15 @@ def find_top_heavy_expansions_count(number_of_expansions=1000):
   return count
 
 def solve():
-  expansions, count = find_top_heavy_expansions()
+  count = 0
+  if len(sys.argv) == 2:
+    if sys.argv[1] == '1':
+      expansions, count = find_top_heavy_expansions()
+    elif sys.argv[1] == '2':
+      count = find_top_heavy_expansions_count()
+  else:
+    count = find_top_heavy_expansions_count()
   print('In the first 1000 expansions of 2^(1/2) as a continued fraction, the number of fractions with a numerator longer than the denominator is %d' % count)
-
 
 if __name__ == '__main__':
   solve()
