@@ -1,38 +1,38 @@
 The largest square number formed by any member of such a pair of anagrams from the provided file is 18769
-         55362224 function calls in 38.993 seconds
+         55362224 function calls in 40.697 seconds
 
    Ordered by: standard name
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        1    0.001    0.001    0.001    0.001 collections.py:1(<module>)
+        1    0.002    0.002    0.002    0.002 collections.py:1(<module>)
         1    0.000    0.000    0.000    0.000 collections.py:26(OrderedDict)
         1    0.000    0.000    0.000    0.000 collections.py:395(Counter)
         1    0.000    0.000    0.000    0.000 heapq.py:31(<module>)
         1    0.000    0.000    0.000    0.000 keyword.py:11(<module>)
-        1    0.001    0.001   38.993   38.993 pe98.py:1(<module>)
-        1    0.004    0.004    0.006    0.006 pe98.py:12(extract_anagram_pairs)
-       44    9.522    0.216   38.983    0.886 pe98.py:27(find_max_mapping_for_word_pair)
-  6511050    7.275    0.000    7.275    0.000 pe98.py:34(<dictcomp>)
-  6513009   12.380    0.000   13.635    0.000 pe98.py:48(apply_letter_map)
-  5861713    4.633    0.000    6.257    0.000 pe98.py:54(is_square)
-        1    0.000    0.000   38.991   38.991 pe98.py:57(find_max_anagramic_square)
-        1    0.000    0.000    0.007    0.007 pe98.py:6(extract_anagram_pairs_from_file)
+        1    0.002    0.002   40.697   40.697 pe98.py:1(<module>)
+        1    0.003    0.003    0.005    0.005 pe98.py:12(extract_anagram_pairs)
+       44   10.042    0.228   40.687    0.925 pe98.py:27(find_max_mapping_for_word_pair)
+  6511050    7.569    0.000    7.569    0.000 pe98.py:34(<dictcomp>)
+  6513009   12.905    0.000   14.206    0.000 pe98.py:48(apply_letter_map)
+  5861713    4.780    0.000    6.464    0.000 pe98.py:54(is_square)
+        1    0.000    0.000   40.694   40.694 pe98.py:57(find_max_anagramic_square)
+        1    0.000    0.000    0.006    0.006 pe98.py:6(extract_anagram_pairs_from_file)
        44    0.000    0.000    0.000    0.000 pe98.py:60(<lambda>)
-        1    0.000    0.000   38.991   38.991 pe98.py:63(solve)
-  6512924    0.503    0.000    0.503    0.000 {len}
-  5861713    0.529    0.000    0.529    0.000 {math.ceil}
- 11723426    1.095    0.000    1.095    0.000 {math.sqrt}
+        1    0.000    0.000   40.694   40.694 pe98.py:63(solve)
+  6512924    0.514    0.000    0.514    0.000 {len}
+  5861713    0.552    0.000    0.552    0.000 {math.ceil}
+ 11723426    1.131    0.000    1.131    0.000 {math.sqrt}
        32    0.000    0.000    0.000    0.000 {max}
      1830    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
        45    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
-  5861713    1.256    0.000    1.256    0.000 {method 'join' of 'str' objects}
+  5861713    1.301    0.000    1.301    0.000 {method 'join' of 'str' objects}
         1    0.000    0.000    0.000    0.000 {method 'read' of 'file' objects}
         1    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
      1786    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
         1    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
         1    0.000    0.000    0.000    0.000 {open}
-  6511050    1.792    0.000    1.792    0.000 {range}
+  6511050    1.893    0.000    1.893    0.000 {range}
      1830    0.002    0.000    0.002    0.000 {sorted}
 
 
