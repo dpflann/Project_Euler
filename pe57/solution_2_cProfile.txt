@@ -1,0 +1,14 @@
+In the first 1000 expansions of 2^(1/2) as a continued fraction, the number of fractions with a numerator longer than the denominator is 153
+         2004 function calls in 0.003 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.003    0.003 pe57.py:1(<module>)
+        1    0.003    0.003    0.003    0.003 pe57.py:15(find_top_heavy_expansions_count)
+        1    0.000    0.000    0.003    0.003 pe57.py:27(solve)
+     1999    0.000    0.000    0.000    0.000 {len}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 {range}
+
+
