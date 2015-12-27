@@ -1,0 +1,22 @@
+The sum of the ordered set of 6 cyclic 4-digit numbers for which each polygonal type is uniquely represented is: 28684
+         216209 function calls in 0.067 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.001    0.001    0.067    0.067 pe61.py:1(<module>)
+       48    0.000    0.000    0.000    0.000 pe61.py:12(hexagonal)
+       43    0.000    0.000    0.000    0.000 pe61.py:15(heptagonal)
+       40    0.000    0.000    0.000    0.000 pe61.py:18(octagonal)
+       96    0.000    0.000    0.000    0.000 pe61.py:3(triangular)
+   215840    0.031    0.000    0.031    0.000 pe61.py:31(can_chain)
+        1    0.035    0.035    0.066    0.066 pe61.py:34(find_cycle)
+        1    0.000    0.000    0.066    0.066 pe61.py:45(solve)
+       68    0.000    0.000    0.000    0.000 pe61.py:6(square)
+       56    0.000    0.000    0.000    0.000 pe61.py:9(pentagonal)
+        6    0.000    0.000    0.000    0.000 {map}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        7    0.000    0.000    0.000    0.000 {range}
+        1    0.000    0.000    0.000    0.000 {sum}
+
+
