@@ -1,0 +1,14 @@
+The number of n-digit positive integers that are also n-th powers is: 49
+         182 function calls in 0.000 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 pe63.py:24(<module>)
+        1    0.000    0.000    0.000    0.000 pe63.py:29(find_powerful_numbers_brute)
+        1    0.000    0.000    0.000    0.000 pe63.py:47(solve)
+      169    0.000    0.000    0.000    0.000 {len}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        9    0.000    0.000    0.000    0.000 {range}
+
+
