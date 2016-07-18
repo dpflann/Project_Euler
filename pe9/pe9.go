@@ -33,7 +33,6 @@ func solve(goal int) int {
 		for b := goal - 1; !foundC && b > 0; b-- {
 			c, foundC := constraints(a, b, goal)
 			if foundC {
-				fmt.Println(a, b, c)
 				return a * b * c
 			}
 		}
