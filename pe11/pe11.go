@@ -39,7 +39,7 @@ func solve(grid string) int {
 	parsedGrid := [20][20]int{}
 	intGrid := strings.Split(grid, "\n")
 	for i, s := range intGrid {
-		for j, n := range func() []string { return strings.Split(s, " ") }() {
+		for j, n := range strings.Split(s, " ") {
 			numN, _ := strconv.Atoi(n)
 			parsedGrid[i][j] = numN
 		}
