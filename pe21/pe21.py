@@ -50,3 +50,5 @@ def test():
   assert(sumAmicablePairs(300) == ( 220 + 284 ))
   print "Tests Pass"
 
+if __name__ == '__main__':
+  solve()
