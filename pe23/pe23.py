@@ -34,4 +34,5 @@ def sumOfNonAbundantSumNumbers():
 def solve():
   print "The sum of all the positive integers which cannot be written as the sum of two abundant numbers is %d." % sumOfNonAbundantSumNumbers()
 
-
+if __name__ == '__main__':
+  solve()

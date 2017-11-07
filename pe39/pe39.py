@@ -46,4 +46,5 @@ def find_maximum_perimeter(limit):
 def solve(limit=1000):
   print "The p <= 1000 for which the number of integral-side, right-angle triangles is maximized is %d." % find_maximum_perimeter(limit)[0]
 
-solve()
+if __name__ == '__main__':
+  solve()

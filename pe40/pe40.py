@@ -24,3 +24,5 @@ def productOfDigits(indices):
 def solve():
   print "The value of d_1 * d_10 * d_100 * d_1000 * d_10000 * d_100000 * d_1000000 is %d." % productOfDigits([1, 10, 100, 1000, 10000, 100000, 1000000])
 
+if __name__ == '__main__':
+  solve()

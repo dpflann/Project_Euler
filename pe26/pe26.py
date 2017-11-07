@@ -34,3 +34,6 @@ def test():
 def solve():
   d, length = findLongestCycle(1000)
   print "The value of d < 1000 for which 1/d contains the longest recurring cycle in its decimal fraction part is %d with length %d." % (d, length)
+
+if __name__ == '__main__':
+  solve()

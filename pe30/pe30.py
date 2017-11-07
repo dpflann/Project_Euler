@@ -46,3 +46,6 @@ def fDp(power):
 def solve():
   print "The sum of all the numbers that can be written as the sum of the fifth powers of their digits is %d." % findDigitPowers(5)
   print "The sum of all the numbers that can be written as the sum of the fifth powers of their digits is %d." % fDp(5)
+
+if __name__ == '__main__':
+  solve()

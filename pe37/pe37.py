@@ -58,3 +58,6 @@ def solve():
     print("The sum of the 11 primes that are both left and right truncatable is: %d" % sum(eligible_primes))
   else:
     print("Not enough primes", eligible_primes)
+
+if __name__ == '__main__':
+  solve()

@@ -44,3 +44,6 @@ def findPandigitalProducts():
 def solve():
   print "The sum of all products whose multiplicand/multiplier/product identity can be written as a 1 through 9 pandigital is %d." % findPandigitalProducts()
 
+
+if __name__ == '__main__':
+  solve()

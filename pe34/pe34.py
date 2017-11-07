@@ -50,4 +50,5 @@ def sumOfFactorialOfDigits(n):
 def solve():
   print "The sum of all numbers which are equal to the sum of the factorial of their digits is %d." % sumOfFactorialOfDigits(m.factorial(9))
 
-solve()
+if __name__ == '__main__':
+  solve()

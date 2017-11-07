@@ -43,3 +43,5 @@ def solve():
     print "The first Fibonacci number to have 1000 digits is %d." % firstFibWithNdigits(1000)
     print "The first Fibonacci number to have 1000 digits is %d." % fFwNd(1000)
 
+if __name__ == '__main__':
+  solve()
