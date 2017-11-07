@@ -52,3 +52,6 @@ def findCircularPrimesLessThan(n):
 def solve():
   oneMillion = 1000000
   print "The number of circular primes below one million is %d." % findCircularPrimesLessThan(oneMillion)
+
+if __name__ == '__main__':
+  solve()

@@ -32,3 +32,6 @@ def totalNameScores():
 
 def solve():
   print "The total of all the name scores in the file is %d." % totalNameScores()
+
+if __name__ == '__main__':
+  solve()

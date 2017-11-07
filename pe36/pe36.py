@@ -25,3 +25,6 @@ def sumOfPalindromicNumbers(n):
 
 def solve():
   print "The sum of all the numbers, less than one million, which are palindromic in base 10 and base 2 is %d." % sumOfPalindromicNumbers(oneMillion)
+
+if __name__ == '__main__':
+  solve()

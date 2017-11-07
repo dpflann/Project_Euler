@@ -42,4 +42,5 @@ def find_max_pair_product(pairs):
   a, b = max(try_pairs(pairs), key=lambda t: t[1])[0]
   return a * b
 
-print "The product of a, b is: %d" % find_max_pair_product(pairs)
+if __name__ == '__main__':
+  print "The product of a, b is: %d" % find_max_pair_product(pairs)

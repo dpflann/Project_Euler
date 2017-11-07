@@ -33,3 +33,6 @@ def countWaysToSum(n):
 
 def solve():
   print "The number of ways £2 be made using any number of coins from 1p, 2p, 5p, 10p, 20p, 50p, £1, £2 is %d." % countWaysToSum(200)
+
+if __name__ == '__main__':
+  solve()

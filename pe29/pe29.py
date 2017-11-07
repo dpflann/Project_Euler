@@ -18,3 +18,6 @@ def distinctPowers():
 
 def solve():
   print "The number of distinct terms in the sequence a**b for 2 <= a, b <= 100 is %d." % distinctPowers()
+
+if __name__ == '__main__':
+  solve()

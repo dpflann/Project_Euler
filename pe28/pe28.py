@@ -33,3 +33,6 @@ def test():
   assert(sumOfDiagonals(3) == 25)
   assert(sumOfDiagonals(5) == 101)
   print "Tests pass"
+
+if __name__ == '__main__':
+  solve()

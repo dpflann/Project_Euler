@@ -42,3 +42,6 @@ def findCuriousFractionsProduct():
 
 def solve():
     print "The value of the denominator of the product of the four fraction in lowest common terms is %d." % findCuriousFractionsProduct().denominator 
+
+if __name__ == '__main__':
+  solve()
