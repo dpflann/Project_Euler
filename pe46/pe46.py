@@ -27,3 +27,5 @@ def find_smallest_non_goldbach_2():
             return n
         n += 2
 
+if __name__ == '__main__':
+  print(find_smallest_non_goldbach_2())

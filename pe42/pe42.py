@@ -17,4 +17,5 @@ def solve():
   triangular_words = [w for w in words if calculate_value(w) in triangular_numbers]
   print('The number of "triangular words" is: %d' % len(triangular_words))
 
-solve()
+if __name__ == '__main__':
+  solve()

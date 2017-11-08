@@ -31,3 +31,6 @@ def test_scenario():
 
 def solve():
   return find_consecutive_numbers_with_n_distinct_prime_factors(consecutive_numbers_required=4, distinct_prime_factors_required=4)[0]
+
+if __name__ == '__main__':
+  solve()

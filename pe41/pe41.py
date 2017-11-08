@@ -61,3 +61,6 @@ def fLpP(limit):
 def solve():
   limit = 987654321
   print "The largest n-digits pandigital prime is %d." % findLargestPandigitalPrime(limit)
+
+if __name__ == '__main__':
+  solve()
